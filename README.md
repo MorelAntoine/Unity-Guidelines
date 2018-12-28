@@ -154,13 +154,17 @@ All parameters and variables start with a lowercase.
         Music
         SFX
     Character
-    Editor Default Resources    // Unity
+    Editor Default Resources        // Unity
     Environment
+        Terrain
+            Desert
+                Layer
+                Texture
         Vegetation
         Vehicule
         ...
-    Gizmos                      // Unity
-    Package                     // All the 3rd-Party asstes
+    Gizmos                          // Unity
+    Package                         // All the 3rd-Party asstes
         Animation
         Audio
             Ambient
@@ -173,7 +177,6 @@ All parameters and variables start with a lowercase.
             ...
         Font
         Template
-        Texture & Material      // Texture and material that don't have a mesh related
         Tool
             AI
             Terrain
@@ -185,27 +188,26 @@ All parameters and variables start with a lowercase.
             Particule
             Shader
     Physic Material
-    Plugins                     // Unity
-    Resources                   // Unity
+    Plugins                         // Unity
+    Resources                       // Unity
     Scene
         NameOfYourScene
-            Light               // Generated light information
-            Terrain             // Terrain asset and Terrain Layers related to this scene
+            Light                   // Generated light information
+            T_YourSceneName.asset   // The terrain related to your scene
             YourScene.unity
     Script
         Component
-            Base                // Abstract component
-            Classic             // Component aiming to be used on visible GameObject
-            Daemon              // Component aiming to run a background task on a non visible GameObject
+            Base                    // Abstract component
+            Classic                 // Component aiming to be used on visible GameObject
+            Daemon                  // Component aiming to run a background task on a non visible GameObject
         Debug
         Framework
-        Helper                  // Helper Class
+        Helper                      // Helper Class
         Library
         Template
-        Utility                 // Utility Class (static)
-    Standard Assets             // Unity
-    StreamingAssets             // Unity
-    Texture & Material          // Texture and material that don't have a mesh related
+        Utility                     // Utility Class (static)
+    Standard Assets                 // Unity
+    StreamingAssets                 // Unity
     VFX
         Particule
         Shader

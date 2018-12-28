@@ -214,17 +214,17 @@ All parameters and variables start with a lowercase.
 
 For each parent there transform must be **Reset**.
 
-    @Daemon // Non visible GameObject that run a background task (e.g. GameManager)
-    _Temporary // Generated GameObject during play mode
+    @Daemon             // Non visible GameObject that run a background task (e.g. GameManager)
+    _Temporary          // Generated GameObject during play mode
     Camera
     Character
         Ally
         Enemy
         NPC
         Player
-    Environment // Visible GameObject that's not a character
-        Dynamic // Movable
-        Static // Bake
+    Environment         // Visible GameObject that's not a character
+        Dynamic         // Movable
+        Static          // Bake
     Light
         Area
         Directional
@@ -232,8 +232,8 @@ For each parent there transform must be **Reset**.
         Spot
     Trigger Area
     UI
-        GUI // Interactive UI
-        HUD // Information UI
+        GUI             // Interactive UI
+        HUD             // Information UI
 
 ## Gitignore
 

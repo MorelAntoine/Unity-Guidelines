@@ -31,100 +31,6 @@ In case of two types share the same symbol, add the entire name in prefix.
     Tsamesymbol     -> Tsamesymbol_
     Terrain         -> Terrain_
 
-## Directory Structure
-
-*All the "Unity" folders are optionals*
-
-    Animation
-        Animator
-        Clip
-    Audio
-        Ambient
-        Mixer
-        Music
-        SFX
-    Character
-    Editor Default Resources    // Unity
-    Environment
-        Vegetation
-        Vehicule
-        ...
-    Gizmos                      // Unity
-    Package                     // All the 3rd-Party asstes
-        Animation
-        Audio
-            Ambient
-            Music
-            SFX
-        Character
-        Environment
-            Vegetation
-            Vehicule
-            ...
-        Font
-        Template
-        Texture & Material      // Texture and material that don't have a mesh related
-        Tool
-            AI
-            Terrain
-            ...
-        UI
-            GUI
-            HUD
-        VFX
-            Particule
-            Shader
-    Physic Material
-    Plugins                     // Unity
-    Resources                   // Unity
-    Scene
-        NameOfYourScene
-            Light               // Generated light information
-            Terrain             // Terrain asset and Terrain Layers related to this scene
-            YourScene.unity
-    Script
-        Component
-            Base                // Abstract component
-            Classic             // Component aiming to be used on visible GameObject
-            Daemon              // Component aiming to run a background task on a non visible GameObject
-        Debug
-        Framework
-        Helper                  // Helper Class
-        Library
-        Template
-        Utility                 // Utility Class (static)
-    Standard Assets             // Unity
-    StreamingAssets             // Unity
-    Texture & Material          // Texture and material that don't have a mesh related
-    VFX
-        Particule
-        Shader
-
-## Game Hierarchy
-
-For each parent there transform must be **Reset**.
-
-    @Daemon // Non visible GameObject that run a background task (e.g. GameManager)
-    _Temporary // Generated GameObject during play mode
-    Camera
-    Character
-        Ally
-        Enemy
-        NPC
-        Player
-    Environment // Visible GameObject that's not a character
-        Dynamic // Movable
-        Static // Bake
-    Light
-        Area
-        Directional
-        Point
-        Spot
-    Trigger Area
-    UI
-        GUI // Interactive UI
-        HUD // Information UI
-
 ## Coding Style
 
 ### Attribute
@@ -234,3 +140,101 @@ All parameters and variables start with a lowercase.
     Public: If you don't want the reference to be change
     Private: To perform a specific action when getting or setting your attribute
     Protected: same effect as Private and impact children
+
+## Directory Structure
+
+*All the "Unity" folders are optionals*
+
+    Animation
+        Animator
+        Clip
+    Audio
+        Ambient
+        Mixer
+        Music
+        SFX
+    Character
+    Editor Default Resources    // Unity
+    Environment
+        Vegetation
+        Vehicule
+        ...
+    Gizmos                      // Unity
+    Package                     // All the 3rd-Party asstes
+        Animation
+        Audio
+            Ambient
+            Music
+            SFX
+        Character
+        Environment
+            Vegetation
+            Vehicule
+            ...
+        Font
+        Template
+        Texture & Material      // Texture and material that don't have a mesh related
+        Tool
+            AI
+            Terrain
+            ...
+        UI
+            GUI
+            HUD
+        VFX
+            Particule
+            Shader
+    Physic Material
+    Plugins                     // Unity
+    Resources                   // Unity
+    Scene
+        NameOfYourScene
+            Light               // Generated light information
+            Terrain             // Terrain asset and Terrain Layers related to this scene
+            YourScene.unity
+    Script
+        Component
+            Base                // Abstract component
+            Classic             // Component aiming to be used on visible GameObject
+            Daemon              // Component aiming to run a background task on a non visible GameObject
+        Debug
+        Framework
+        Helper                  // Helper Class
+        Library
+        Template
+        Utility                 // Utility Class (static)
+    Standard Assets             // Unity
+    StreamingAssets             // Unity
+    Texture & Material          // Texture and material that don't have a mesh related
+    VFX
+        Particule
+        Shader
+
+## Game Hierarchy
+
+For each parent there transform must be **Reset**.
+
+    @Daemon // Non visible GameObject that run a background task (e.g. GameManager)
+    _Temporary // Generated GameObject during play mode
+    Camera
+    Character
+        Ally
+        Enemy
+        NPC
+        Player
+    Environment // Visible GameObject that's not a character
+        Dynamic // Movable
+        Static // Bake
+    Light
+        Area
+        Directional
+        Point
+        Spot
+    Trigger Area
+    UI
+        GUI // Interactive UI
+        HUD // Information UI
+
+## Gitignore
+
+A generic **.gitignore** is provided in the folder.
